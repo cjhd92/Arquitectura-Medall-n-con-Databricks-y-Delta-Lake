@@ -24,20 +24,20 @@ El objetivo es mostrar un flujo de trabajo de **Data Lakehouse** aplicable en en
   - Ingesta de datos con `spark.read.csv`.
   - Almacenamiento en **formato Delta** para eficiencia y confiabilidad.
 
-🥈 Silver Layer
-•	Descripción: Contiene datos limpios, estandarizados y transformados.
-•	Acciones realizadas:
-o	Creación de vistas temporales para ejecutar SQL.
-o	Limpieza de nombres de columnas y normalización de fechas.
-o	Generación de columnas derivadas (nombre_completo, puntuación de riesgo).
-o	Conversión de datos categóricos a numéricos mediante expresiones SQL.
+### 🥈 Silver Layer
+- **Descripción**: Contiene datos limpios, estandarizados y transformados.
+- **Acciones realizadas**:
+	- Creación de vistas temporales para ejecutar SQL.
+  -	Limpieza de nombres de columnas y normalización de fechas.
+  - Generación de columnas derivadas (nombre_completo, puntuación de riesgo).
+  - Conversión de datos categóricos a numéricos mediante expresiones SQL.
 
-🥇 Gold Layer
-•	Descripción: Contiene métricas de negocio y datos listos para consumo.
-•	Acciones realizadas:
-o	Cálculo de riesgo categorizado usando CASE WHEN.
-o	Creación de un DataFrame con totales de pacientes por ciudad y nivel de riesgo.
-o	Persistencia en formato Delta para uso en BI.
+### 🥇 Gold Layer
+- **Descripción**: Contiene métricas de negocio y datos listos para consumo.
+- **Acciones realizadas**:
+  - Cálculo de riesgo categorizado usando CASE WHEN.
+  - Creación de un DataFrame con totales de pacientes por ciudad y nivel de riesgo.
+  - Persistencia en formato Delta para uso en BI.
 📊 Relación con Data Lake y Data Warehouse
 •	Data Lake (Bronze): Almacena datos crudos de manera flexible y económica.
 •	Silver (ODS / Staging): Funciona como una capa de Operational Data Store, limpiando y normalizando la información.
