@@ -43,3 +43,4 @@ El objetivo es mostrar un flujo de trabajo de **Data Lakehouse** aplicable en en
 •	Silver (ODS / Staging): Funciona como una capa de Operational Data Store, limpiando y normalizando la información.
 •	Data Warehouse (Gold): Produce métricas e indicadores listos para dashboards, modelos predictivos o reportes ejecutivos.
 
+![Diagrama](https://github.com/user-attachments/assets/23de7ef9-751d-46b9-a452-adee0e883cd4)
